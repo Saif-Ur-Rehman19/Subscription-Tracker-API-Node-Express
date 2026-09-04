@@ -2,4 +2,16 @@ import { config } from "dotenv";
 
 config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 
-export const { PORT, NODE_ENV, DB_URI, JWT_SECRET, JWT_EXPIRES_IN, ARC_JET_KEY, ARC_JET_ENV } = process.env;
+export const {
+  PORT,
+  NODE_ENV,
+  DB_URI,
+  JWT_SECRET,
+  JWT_EXPIRES_IN,
+  ARC_JET_KEY,
+  ARC_JET_ENV,
+  QSTASH_TOKEN,
+  QSTASH_URL,
+  SERVER_URL,
+  EMAIL_PASSWORD
+} = process.env;
